@@ -1,5 +1,13 @@
-function isPalindrome(word) {
+function isPalindrome(wordPal) {
   // Write your algorithm here
+  let word = wordPal.length;
+
+  for (let i=0; i < word / 2; i++){
+    if (wordPal[i] !== wordPal[word - 1 - i]){
+      return false
+    }
+  }
+  return true
 }
 
 /* 
